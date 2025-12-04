@@ -6,11 +6,6 @@ class LibkrunAT1151 < Formula
   sha256 "0ca2999968dbc469e9949d5a61f4399e339a51f3db7ff356aba3b8f13fc4c075"
   license "Apache-2.0"
 
-  bottle do
-    root_url "https://raw.githubusercontent.com/slp/homebrew-krun/master/bottles"
-    sha256 cellar: :any, arm64_sequoia: "e4eb00e58f84e95caef93d36c403b4dd134fa140f2b884bea4c0d62c076afa2d"
-  end
-
   depends_on "rust" => :build
   # Upstream only supports Hypervisor.framework on arm64
   depends_on arch: :arm64

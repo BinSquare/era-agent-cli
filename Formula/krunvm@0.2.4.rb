@@ -5,11 +5,6 @@ class KrunvmAT024 < Formula
   sha256 "d71467fa62c43141334f8d40b81aa7297ddd6e68d5dda9e1202b085e6d81655c"
   license "Apache-2.0"
 
-  bottle do
-    root_url "https://raw.githubusercontent.com/slp/homebrew-krun/master/bottles"
-    sha256 cellar: :any, arm64_sequoia: "56a6302357c4479ac920b8bf233a43e0bcc134c9c809414a8c676d853839b58b"
-  end
-
   depends_on "asciidoctor" => :build
   depends_on "rust" => :build
   # We depend on libkrun, which only supports Hypervisor.framework on arm64
